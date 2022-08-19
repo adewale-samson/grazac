@@ -1,0 +1,163 @@
+  /* Basic styling */
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: "Circular Std", sans-serif;
+  }
+  header {
+    background: #fff;
+    padding: 5px 20px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: #60E1CB;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  .toggle a {
+    font-size: 20px;
+  }
+  .button.secondary {
+    border-bottom: 1px #444 solid;
+  }
+  
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item.button {
+    order: 2;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+  
+  /* Navbar Toggle */
+  .toggle {
+    cursor:pointer;
+  }
+  .bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  .bars:before,
+  .bars:after {
+    background: #999;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  .bars:before {
+    top: 5px;
+  }
+  .bars:after {
+    top: -5px;
+  }
+  
+  /* Tablet menu */
+  @media screen and (min-width: 468px) {
+    .menu {
+        justify-content: center;
+    }
+  
+    .logo {
+        flex: 1;
+    }
+  
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button.secondary a {
+        background: transparent;
+        padding: 7.5px 15px;
+        background: #7BC0E3;
+        color: #fff;
+        border-radius:50em;    
+    }
+    .button a:hover {
+        text-decoration: none;
+        transition:all .25s;
+    }
+    .button.secondary a:hover {
+        color: #ddd;
+    } 
+  }
+  
+  /* Desktop menu */
+  @media screen and (min-width: 768px) {
+    header {
+      padding: 5px 50px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 23px;
+    }
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+    .home a{
+      color: black;
+    }
+  }
