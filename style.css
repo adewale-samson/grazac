@@ -36,6 +36,45 @@
   .button.secondary {
     border-bottom: 1px #444 solid;
   }
+  /* Hero-section */
+  .hero_section {
+    padding: 5px 20px;
+  }
+  .hero_section h1{
+    color: #292525;
+    max-width: 250px;
+    padding-bottom: 30px;   
+  }
+  .color_change {
+    color: #60E1CB;
+  }
+  .hero_section p {
+    max-width: 250px;
+    text-align:left;
+    font-family: 'DM Sans', sans-serif;
+    padding-bottom: 40px;
+  }
+  .btn1 {
+    background: #60E1CB;
+    box-shadow: 0px 8px 12px rgba(96, 225, 203, 0.56);
+    border-radius: 1000px;
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+  }
+  .btn2 {
+    color:#60E1CB;
+    border-radius: 1000px;
+    background: #fff;
+    padding: 14px 24px;
+    border: 1px solid grey;
+  }
+  .hero_svg svg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 5px 20px;
+  }
   
   /* Mobile menu */
   .menu {
