@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* border: 1px solid red; */
   }
   body {
     font-family: "Circular Std", sans-serif;
@@ -40,13 +41,13 @@
   .hero_section {
     padding: 5px 20px;
   }
-  hr{display: none;}
+  .hero_hr{display: none;}
   .hero_div1 h1{
     color: #292525;
     max-width: 250px;
     padding-bottom: 30px;
-    text-align: center;
-    font-size: 20px;   
+    text-align:start;
+    font-size: 24px;   
   }
   .color_change {
     color: #60E1CB;
@@ -88,6 +89,187 @@
     display: block;
     margin: 0 auto;
   }
+      /* Our Services section */
+  .service_section{
+    background-color: #E9FBF8;
+    text-align: center;
+  }
+  .service_section h2 {
+    color: #292525;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 61px;
+    padding-top: 100px;
+  }
+  .para1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 102.2%;
+  }
+  .sticker_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding-bottom: 107px;
+  }
+  .sticker{
+    width: 351px;
+    height: 381px;
+    margin: 30px;
+    background-color: #FDFDFF;
+    box-shadow: 0px 97px 90px rgba(7, 0, 59, 0.12);
+    border-radius: 12px;
+    text-align: start;
+    padding: 0px 30px;
+  }
+  .sticker hr{
+    width: 100%;
+    height: 7px;
+    background-color:#60E1CB;
+    margin-bottom: 79px;
+  }
+  .sticker h3{
+    margin: 35px 0px 16px 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .sticker p{
+    width: 279px;
+    margin-bottom: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;   
+  }
+  .sticker small {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #7BC0E3;
+  }
+  /* Portfolio section  */
+  .portfolio_para{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .portfolio h3{
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 170.2%;
+    text-align: center;
+    color: #7BC0E3;
+    margin-top: 67px;
+
+  }
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio_flex {
+    padding-right: 30px;
+  }
+  .portfolio_flex img {
+    width: 352.01px;
+    height: 297.09px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  .portfolio_flex p {
+    width: 352px;
+    text-align: start;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 170.2%;
+  }
+  .ul_flex{
+    display: block;
+    text-align: center;
+    margin-bottom: 55px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* font-style: normal; */
+    letter-spacing: 0.02em;
+  }
+  .ul_flex li{
+    margin-bottom:  10px;
+  }
+  .ul_flex li a {
+    color: #7BC0E3; 
+  }
+  .btn-border{
+    border: 2px solid #7BC0E3;
+    border-radius: 50em;
+    width: 200px;
+    padding: 10px; 
+    margin-right:  auto;
+    margin-left: auto; 
+  }
+  /* Reality section  */
+  .reality {
+    height: 1359.92px;
+  }
+  .num_deco{
+    width: 52.24px;
+    height: 52.16px;
+    background: #FFFFFF;
+    box-shadow: 0px 32px 41px rgba(0, 0, 0, 0.13);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #7BC0E3;
+    border-radius: 50%;
+  }
+  .reality_flex{
+    display: flex;
+    align-items: baseline;
+  }
+  .idea_h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #60E1CB;
+  }
+  .info{
+    width: 553px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 157.2%;
+    opacity: 0.7;
+  }
+  .reality img{
+    width: 50%;
+    
+  }
+  .text_img{
+    display: flex;
+    /* height: 800px; */
+    /* justify-content: space-between; */
+  }
+  .text_img img{
+    /* align-self: flex-end; */
+  }
+
   
   /* Mobile menu */
   .menu {
@@ -176,7 +358,7 @@
     .button.secondary a:hover {
         color: #ddd;
     }
-    hr{display: none;}
+    .hero_hr{display: none;}
     .hero_div1 h1{
       
       /* max-width: 100%; */
@@ -194,7 +376,16 @@
       width: 45%;
     }
   }
-  
+  .service_section h2 {
+      font-size: 30px;
+  }
+  .portfolio_para{
+      font-size: 40px;
+  }
+  .ul_flex{
+    font-size: 20px;
+  }
+
   /* Desktop menu */
   @media screen and (min-width: 768px) {
     header {
@@ -244,7 +435,7 @@
     .btn2 {
       width: 150px;
     }
-    hr {
+    .hero_hr {
       display: block;
       width: 100px;
       height: 4px;
@@ -255,9 +446,40 @@
       font-style: normal;
       font-weight: 900;
       font-size: 38px;
-      text-align: start;
+      /* text-align: start; */
     }
     .hero_div1 p{
       width: 500px;
     }
+    .para1{
+      width: 760px;
+      margin: 0 auto;
+    }
+    .service_section h2 {
+      font-size: 32px;
+    }
+    .portfolio_para{
+      font-size: 48px;
+    }
+    .ul_flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+    }
+    .btn-border{
+      width: auto;
+      padding: 10px; 
+      margin-right: 0;
+      margin-left: 0; 
+    }
+    .ul_flex li{
+      margin-right:  1.2em;
+    }
+    .last_item{
+      margin-right: 0px;
+    }
+
+    
+    
   }
