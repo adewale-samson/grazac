@@ -3,7 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
   }
   body {
     font-family: "Circular Std", sans-serif;
@@ -335,6 +335,92 @@
     height: 84px;
     margin-bottom: 161px;
   }
+  /* Testimonials section  */
+  .testimonial{
+    
+  }
+  .test_h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.006em;
+    color: #7BC0E3;
+    margin-top: 135px;
+    margin-bottom: 16px;
+    text-align: center;   
+  }
+  .test_h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+  }
+  .rating{
+    width: 200px;
+    height: 344px;
+    background: #FDFDFF;
+    box-shadow: 0px 97px 90px rgba(7, 0, 59, 0.12);
+    border-radius: 12px;
+    text-align: center;
+  }
+  .rating h3{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .stars{
+    margin-bottom: 30px;
+  }
+  .stars img {
+    width: 5%;
+  }
+  .experience{
+    width: 120px;
+    margin: 0 auto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 177.2%;
+    color: #292525;
+  }
+  .review{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .next{
+    display: none;
+    width: 10%;
+  }
+  .carousel{
+    text-align: center;
+    font-style: normal;
+  }
+  .carousel img{
+    margin-top: 51px;
+    margin-bottom: 31px;
+  }
+  .carousel_para1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #292525;
+    margin-bottom: 10px;
+  }
+  .carousel_para2{
+    color: #60E1CB;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 30px;
+  }
+  .mobile_next{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
 
   
   /* Mobile menu */
@@ -451,6 +537,19 @@
   .ul_flex{
     font-size: 20px;
   }
+  .rating{
+    width: 450px;
+  }
+  .experience{
+    width: 360px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  /* .next{
+    display: block; 
+  } */
+  
+
   
 
   /* Desktop menu */
@@ -568,5 +667,22 @@
     .email_btn{
       width: 411px;
     }
-
+    .experience{
+      width: 560px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .rating{
+      width: 650px;
+    }
+    .carousel_para2{
+      margin-bottom: 140px;
+    }
+    .next{
+      display: block; 
+    }
+    .mobile_next{
+      display: none;
+    }
+    
   }
