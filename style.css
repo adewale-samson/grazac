@@ -252,8 +252,8 @@
     margin-bottom: 40px;
     
   }
-  .num_deco{
-    /* width: 52.24px;
+  /* .num_deco{
+    width: 52.24px;
     height: 52.16px;
     background: #FFFFFF;
     box-shadow: 0px 32px 41px rgba(0, 0, 0, 0.13);
@@ -264,8 +264,8 @@
     text-align: center;
     color: #7BC0E3;
     border-radius: 50%;
-    margin-right: 20px; */
-  }
+    margin-right: 20px;
+  } */
   .reality_flex{
     display: flex;
     /* align-items: baseline; */
