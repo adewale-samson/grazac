@@ -13,16 +13,17 @@
 </head>
 <body>
     <header>
-        <ul class="menu">
-            <li class="logo"><a href="#"><img src="images/logo.svg" alt="Davoc logo" srcset=""></a></li>
-            <li class="item home"><a href="#">Home</a></li>
+        <span class="logo"><a href="index.html"><img src="images/logo.svg" alt="Davoc logo"></a></span>
+        <ul id="menu" class="menu">
+            <li class="item"><a href="#" class="home">Home</a></li>
             <li class="item"><a href="services.html">Services</a></li>
             <li class="item"><a href="#">Case</a></li>
             <li class="item"><a href="#">Davoc Specialist</a></li>
             <li class="item"><a href="#">Blog</a></li>
-            <li class="item button secondary"><a href="#">Request a quote</a></li>
-            <li class="toggle"><span class="bars"></span></li>
+            <li class="item no_item"><a href="#">Request a quote</a></li>
         </ul>
+        <span class="bars"><img src="images/hamburger.svg" alt="hamburger icon"></span>
+        <span class="close">&times;</span>
     </header>
     <main>
         <!-- hero section -->
@@ -62,7 +63,6 @@
         </p>
         <article class="sticker_flex">
             <div class="sticker">
-                <hr>
                 <svg width="57" height="55" viewBox="0 0 57 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle opacity="0.2" cx="22.9687" cy="23.4365" r="22.9594" fill="#60E1CB"/>
                     <path d="M51.8913 52.3754H17.1087C14.2919 52.3754 12 50.1344 12 47.3803V18.5459C12 15.7918 14.2919 13.5508 17.1087 13.5508H51.8913C54.708 13.5508 57 15.7918 57 18.5459V47.3803C57 50.1344 54.708 52.3754 51.8913 52.3754ZM17.1087 15.0387C15.1309 15.0387 13.5217 16.6121 13.5217 18.5459V47.3803C13.5217 49.3141 15.1309 50.8875 17.1087 50.8875H51.8913C53.8691 50.8875 55.4783 49.3141 55.4783 47.3803V18.5459C55.4783 16.6121 53.8691 15.0387 51.8913 15.0387H17.1087Z" fill="#60E1CB"/>
@@ -90,7 +90,6 @@
                 </p>
             </div>
             <div class="sticker">
-                <hr>
                 <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle opacity="0.2" cx="16.8169" cy="11.7363" r="22.9594" fill="#60E1CB"/>
                     <path d="M44.6072 7.07131C43.5625 4.41956 42.4375 3.53564 37.9375 3.53564C35.2053 3.53564 33.1161 5.62489 33.1161 8.35706C33.1161 9.80348 33.9197 11.1696 34.7233 12.616C34.9643 13.1785 35.3661 13.741 35.6072 14.3035L35.9286 14.9463C36.6518 16.3927 37.1339 17.4374 37.1339 19.6071C37.1339 20.491 36.9732 21.4553 36.5714 22.8213V22.9016L33.9197 30.857L27.0329 11.3446C27.2659 11.3146 27.499 11.2832 27.7322 11.2499C29.0179 11.2499 30.0625 10.1249 30.0625 8.83914C30.0625 7.47306 29.0178 6.42839 27.6517 6.42839C27.5714 6.42839 27.5714 6.42839 27.491 6.42839C24.3571 6.91056 21.2232 6.91056 18.0892 6.42839C18.0089 6.42839 18.0089 6.42839 17.9285 6.42839C16.5624 6.42839 15.5177 7.47306 15.5177 8.83914C15.5178 10.1249 16.5625 11.2499 17.8483 11.2499C18.1175 11.2902 18.3895 11.3274 18.6625 11.3629L21.9464 19.6874L17.9286 31.4999L10.6958 11.2636C10.7228 11.2589 10.7498 11.2547 10.7767 11.2499C12.0625 11.1696 13.1071 10.1249 13.1071 8.83914C13.1071 7.47306 12.0624 6.42839 10.6963 6.42839C10.616 6.42839 10.616 6.42839 10.5356 6.42839C7.96416 6.91056 5.39274 6.91056 2.82133 6.42839C2.741 6.42839 2.741 6.42839 2.66058 6.42839C1.29467 6.42848 0.25 7.47314 0.25 8.83914C0.25 10.1024 1.25863 11.1322 2.51336 11.2441L12.3839 38.2499C12.9464 39.7766 14.1517 40.9016 15.7589 41.3035C16.1607 41.3838 16.4822 41.4642 16.8839 41.4642C18.8928 41.4642 20.8214 40.0981 21.4642 38.1696L26.0446 24.5088L30.866 38.1696C31.2677 39.2946 32.0713 40.0981 32.9552 40.4196C33.7588 40.741 34.6427 40.6606 35.4463 40.2588C36.491 39.8571 37.2946 38.9731 37.616 37.9285L43.5625 20.0891C44.9286 16.6338 45.25 13.5802 45.25 11.6516V10.3659C45.25 9.24098 45.0892 8.11598 44.6072 7.07131ZM17.9286 9.64272C17.4464 9.64272 17.125 9.32131 17.125 8.83914C17.125 8.43739 17.4464 8.03556 17.8483 8.03556C21.1429 8.59806 24.3572 8.59806 27.7322 8.03556C28.1339 8.03556 28.4554 8.4373 28.4554 8.83914C28.4554 9.32131 28.134 9.64272 27.6518 9.64272C27.5715 9.64272 27.5715 9.64272 27.4911 9.64272C27.013 9.71629 26.5349 9.7772 26.0568 9.82835C25.9768 9.81183 25.8923 9.80348 25.8036 9.80348C23.6339 10.0446 21.4643 10.0446 19.2947 9.80348C19.2932 9.80348 19.2916 9.80365 19.2901 9.80365C18.8898 9.75777 18.4896 9.70434 18.0893 9.64272C18.0089 9.64272 18.0089 9.64272 17.9286 9.64272ZM1.85717 8.83914C1.85717 8.43739 2.17858 8.03556 2.58042 8.03556C5.31259 8.59806 8.04467 8.59806 10.7768 8.03556C11.1786 8.03556 11.5001 8.4373 11.5001 8.83914C11.5001 9.32131 11.1787 9.64272 10.6965 9.64272C10.6162 9.64272 10.6162 9.64272 10.5358 9.64272C10.2033 9.70504 9.87077 9.759 9.53828 9.80523C9.52264 9.80453 9.50699 9.80348 9.49108 9.80348C9.35687 9.82492 9.22223 9.8447 9.08731 9.86333C7.21173 10.083 5.33623 10.0448 3.46064 9.75144C3.40826 9.74186 3.35588 9.73316 3.30358 9.72314C3.29655 9.72314 3.28952 9.72376 3.28249 9.72385C3.12877 9.69845 2.97514 9.67164 2.82142 9.64281C2.74108 9.64281 2.74108 9.64281 2.66066 9.64281C2.17858 9.64272 1.85717 9.32131 1.85717 8.83914ZM43.5625 11.7321C43.5625 13.4999 43.3214 16.3928 42.0358 19.6071L36.009 37.4463C35.7679 38.0891 35.2858 38.5713 34.6429 38.8124C34.2412 38.9731 33.8393 39.0535 33.4376 38.8927C32.9554 38.732 32.4733 38.2499 32.2323 37.607L26.6073 21.857C26.5269 21.5356 26.2055 21.2945 25.884 21.2945C25.5626 21.2945 25.2412 21.5356 25.1608 21.857L19.9375 37.6071C19.4553 39.1338 17.7678 40.0981 16.1608 39.6963C15.1161 39.4552 14.3125 38.7321 13.9108 37.6874L4.3552 11.51C5.12969 11.5987 5.90409 11.6517 6.67858 11.6517C7.48322 11.6517 8.28786 11.5949 9.09241 11.4998L17.2857 34.2321C17.366 34.5535 17.6874 34.7946 18.0089 34.7946C18.3303 34.7946 18.6517 34.5535 18.7322 34.2321L23.5536 19.9285C23.6339 19.7677 23.6339 19.5267 23.5536 19.366L20.5262 11.5585C21.274 11.6172 22.0203 11.6517 22.75 11.6517C23.6183 11.6517 24.5105 11.6037 25.413 11.5224L33.2767 33.5892C33.3571 33.9106 33.6785 34.1517 34 34.1517C34.3215 34.1517 34.6428 33.9106 34.7233 33.5892L38.0983 23.5446C38.1786 23.4642 38.1786 23.4642 38.1786 23.3838C38.6608 21.8571 38.8214 20.6516 38.8214 19.6874C38.8214 17.116 38.1786 15.8302 37.4553 14.3035L37.1339 13.6606C36.8125 13.0981 36.4911 12.4553 36.1697 11.8928C35.4464 10.6874 34.8036 9.48206 34.8036 8.43739C34.8036 6.34814 36.4911 5.22314 38.0178 5.22314C42.1964 5.22314 42.5178 6.02673 43.0803 7.71423C43.4017 8.51781 43.5625 9.40173 43.5625 10.366V11.7321V11.7321Z" fill="#60E1CB"/>
@@ -110,7 +109,6 @@
                 </p>
             </div>
             <div class="sticker">
-                <hr>
                 <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle opacity="0.2" cx="13.8847" cy="11.3857" r="22.9594" fill="#60E1CB"/>
                     <path d="M39.8028 5.85197H39.2688C40.2866 4.195 39.9108 1.97044 38.2774 0.758542C36.5174 -0.547135 34.0163 -0.126851 32.7881 1.70862L30.0155 5.85206H6.19791C4.24018 5.85206 2.64746 7.44478 2.64746 9.4025V32.1019C2.64746 34.0596 4.24018 35.6524 6.19791 35.6524H19.9889L18.9469 40.029H16.6979C15.2322 40.029 14.0397 41.2214 14.0397 42.6871V43.2421H11.2673C10.7818 43.2421 10.3884 43.6357 10.3884 44.121C10.3884 44.6063 10.7818 44.9999 11.2673 44.9999H34.7335C35.2189 44.9999 35.6124 44.6063 35.6124 44.121C35.6124 43.6357 35.2189 43.2421 34.7335 43.2421H31.961V42.6871C31.961 41.2214 30.7686 40.029 29.3028 40.029H27.0539L26.0118 35.6524H39.8028C41.7606 35.6524 43.3533 34.0596 43.3533 32.1019V27.1072V9.40242C43.3533 7.44469 41.7606 5.85197 39.8028 5.85197V5.85197ZM27.2099 21.3027C25.8357 22.2647 23.2614 20.9572 20.8029 22.269C20.2031 19.1529 20.5813 16.2222 23.7035 15.5754C24.107 15.4913 24.5415 15.4532 24.9113 15.4606C25.9681 16.2447 27.037 17.0377 28.0908 17.8196C28.5521 19.1615 28.379 20.4844 27.2099 21.3027ZM28.0956 11.8821L30.5835 13.728L28.6702 16.0606C27.8826 15.4762 27.2055 14.9739 26.4178 14.3894C26.5814 14.145 27.9461 12.1054 28.0956 11.8821V11.8821ZM34.2491 2.68621C34.9147 1.69122 36.2724 1.45972 37.23 2.1703C38.188 2.88097 38.3595 4.24729 37.6004 5.17285C36.2535 6.81488 33.0514 10.719 31.6994 12.3673L29.0742 10.4196L34.2491 2.68621ZM30.2032 42.6871V43.2421H15.7975V42.6871C15.7975 42.1907 16.2014 41.7868 16.6979 41.7868H29.3028C29.7992 41.7868 30.2032 42.1907 30.2032 42.6871ZM25.2469 40.029H20.7538L21.7958 35.6524H24.2049L25.2469 40.029ZM41.5955 32.1019C41.5955 33.0904 40.7913 33.8946 39.8028 33.8946C38.4077 33.8946 7.76664 33.8946 6.198 33.8946C5.20951 33.8946 4.40533 33.0904 4.40533 32.1019V27.9861H6.91684C7.40225 27.9861 7.79573 27.5925 7.79573 27.1072C7.79573 26.6219 7.40225 26.2283 6.91684 26.2283H4.40515V9.40242C4.40515 8.41393 5.20933 7.60975 6.19782 7.60975H28.8393C27.9973 8.86805 25.5409 12.539 24.7629 13.7017C23.0405 13.7172 21.321 14.3173 20.1953 15.6314C18.6635 17.4195 18.3943 20.2291 19.3954 23.9821C19.5665 24.6239 20.3673 24.8538 20.8518 24.391C23.1243 22.2195 25.9547 24.5881 28.4893 22.5366C30.0365 21.2842 30.4027 19.2932 29.8193 17.4313C30.6079 16.4698 37.0845 8.57353 37.875 7.60975H39.8027C40.7912 7.60975 41.5953 8.41393 41.5953 9.40242V26.2282H13.9478C13.4624 26.2282 13.0689 26.6218 13.0689 27.1071C13.0689 27.5924 13.4624 27.986 13.9478 27.986H41.5955V32.1019Z" fill="#60E1CB"/>
@@ -130,7 +128,6 @@
                 </p>
             </div>
             <div class="sticker">
-                <hr>
                 <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle opacity="0.2" cx="23.0405" cy="23.79" r="22.9594" fill="#60E1CB"/>
                     <mask id="path-2-inside-1_2_329" fill="white">
@@ -152,7 +149,6 @@
                 </p>
             </div>
             <div class="sticker">
-                <hr>
                 <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle opacity="0.2" cx="23.7094" cy="10.1257" r="22.9594" fill="#60E1CB"/>
                     <path d="M50.2142 0.700245C50.0224 0.51238 49.7607 0.410552 49.4886 0.420601C49.2678 0.428353 44.0105 0.635454 37.761 2.80016C32.7532 4.53296 28.5791 7.01386 25.3546 10.174C24.6321 10.8821 23.9289 11.633 23.2562 12.413C20.0679 10.5738 17.513 11.1505 15.8979 11.9976C12.179 13.948 9.8772 19.2438 9.8772 23.0318C9.87749 23.4188 10.1155 23.7678 10.4803 23.9159C10.6011 23.965 10.7281 23.9888 10.8539 23.9888C11.1081 23.9888 11.3578 23.8915 11.5446 23.7085C13.5058 21.7865 15.9248 21.9067 16.7151 22.0085L17.0571 22.3437C16.384 23.9132 15.8418 25.4739 15.4442 26.9919C15.3006 27.5412 15.3491 28.1225 15.5624 28.6542C14.6222 29.0788 13.7151 29.7023 12.9252 30.4764C10.4115 32.94 9.90103 38.9438 9.88052 39.1982C9.85806 39.4774 9.96138 39.7522 10.1634 39.9502C10.3473 40.1303 10.596 40.2305 10.8539 40.2305C10.8794 40.2305 10.9051 40.2296 10.9308 40.2276C11.1904 40.2076 17.3169 39.7073 19.8307 37.2438C20.6202 36.4701 21.2564 35.5812 21.6897 34.66C22.2641 34.8813 22.8553 34.9086 23.3869 34.7751C24.9352 34.3855 26.5276 33.8543 28.1293 33.1946L28.4713 33.5298C28.5751 34.3043 28.6978 36.675 26.7366 38.5968C26.4574 38.8705 26.3738 39.2821 26.525 39.6397C26.6761 39.9973 27.0321 40.2304 27.4272 40.2304C31.2924 40.2304 36.6962 37.9746 38.6864 34.3302C39.5508 32.7475 40.1392 30.2437 38.2625 27.1191C39.0581 26.4601 39.8244 25.7711 40.5472 25.0627C43.7719 21.9026 46.3033 17.8119 48.0715 12.9047C50.2804 6.77987 50.4917 1.62761 50.4996 1.41132C50.5093 1.14574 50.4059 0.888206 50.2142 0.700245ZM12.0606 20.9733C12.6672 18.0962 14.4292 14.939 16.8199 13.6851C18.4174 12.8473 20.1636 12.9295 22.0202 13.9254C20.4385 15.9641 19.0634 18.1605 17.9172 20.4798C17.9027 20.471 17.7269 20.2545 17.4003 20.1823C17.266 20.1525 14.6822 19.6079 12.0606 20.9733ZM18.4496 35.8903C17.1069 37.2062 13.957 37.9003 11.9661 38.1836C12.2553 36.2324 12.9636 33.1456 14.3063 31.8298C15.0582 31.0929 15.9301 30.5342 16.8065 30.2195L20.0928 33.4401C19.7717 34.299 19.2017 35.1534 18.4496 35.8903ZM22.9018 32.9209C22.6192 32.9919 22.2918 32.8877 22.0485 32.6496C20.7851 31.4115 20.2908 30.9272 20.1358 30.7753C19.8514 30.4966 19.154 29.8132 17.6137 28.3036C17.3702 28.0644 17.2639 27.7437 17.3361 27.4672C17.6489 26.2734 18.0579 25.0486 18.5554 23.812L26.6311 31.7262C25.3691 32.2138 24.1195 32.6146 22.9018 32.9209ZM36.9646 33.427C35.6852 35.7697 32.4637 37.4966 29.5279 38.091C30.464 36.3648 30.6703 34.1674 30.3283 32.8349C30.2489 32.5254 30.0429 32.3698 30.0314 32.3515C32.3979 31.2282 34.639 29.8806 36.7194 28.3305C37.7357 30.1502 37.8194 31.8617 36.9646 33.427ZM39.1664 23.7092C38.2864 24.5715 37.3389 25.4046 36.35 26.1853C33.9729 28.061 31.3564 29.6499 28.565 30.9147L19.3834 21.9169C20.6741 19.1812 22.2953 16.6171 24.2092 14.2878C25.0065 13.318 25.8565 12.3893 26.7361 11.5274C29.6291 8.69211 33.3629 6.43563 37.8367 4.81136L46.0195 12.8305C44.3623 17.2147 42.0597 20.8739 39.1664 23.7092ZM46.7221 10.812L39.8964 4.12277C43.6152 2.9908 46.8505 2.56693 48.4653 2.41457C48.3097 3.9974 47.8771 7.16795 46.7221 10.812Z" fill="#60E1CB"/>
@@ -172,7 +168,6 @@
                 </p>
             </div>
             <div class="sticker">
-                <hr>
                 <svg width="56" height="63" viewBox="0 0 56 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle opacity="0.2" cx="23.0405" cy="23.1257" r="22.9594" fill="#60E1CB"/>
                     <g clip-path="url(#clip0_2_332)">
@@ -199,7 +194,7 @@
             </div>
         </article>        
     </section>
-    <section class="portfolio">
+    <!-- <section class="portfolio">
         <h3>Portfolio</h3>
         <p class="portfolio_para">Our Great Work</p>
         <div>
@@ -227,6 +222,48 @@
                 </p>
             </div>
         </div>
+    </section> -->
+    <section class="portfolio">
+        <div class="white_bg">
+            <h3>Portfolio</h3>
+            <p class="portfolio_para">Our Great Work</p>
+            <div>
+                <ul class="ul_flex">
+                    <li class="btn-border"><a href="#">Web Optimization</a></li>
+                    <li class="web-btn"><a href="#">Web Redesign</a></li>
+                    <li class="web-btn last_item"><a href="#">Search Engine Optimization</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="green_bg"></div>
+        <div class="image_float">
+            <div class="content">
+                <div class="portfolio_flex">
+                    <img src="images/leaf.jpg" alt="image of a leaf">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus vitae tortor sapien, lectus scelerisque porttitor. Dolor nulla bibendum 
+                    </p>
+                </div>
+                <div class="portfolio_flex">
+                    <img src="images/fone.jpg" alt="image of a phone on a table">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus vitae tortor sapien, lectus scelerisque porttitor. Dolor nulla bibendum
+                    </p>
+                </div>
+                <div class="portfolio_flex pad_right">
+                    <img src="images/laptop.jpg" alt="image of a laptop on a table">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus vitae tortor sapien, lectus scelerisque porttitor. Dolor nulla bibendum 
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="div_more"><button class="more">See All</button></div>
+        <span><a class="prev" onclick="plusSlides(-1)">&#10094;</a></span>
+        <span><a class="next" onclick="plusSlides(1)">&#10095;</a></span>
+
+       
+        
     </section>
     <section class="reality">
         <h2>Your idea into <span class="color_change">reality</span></h2>
@@ -236,7 +273,24 @@
         <article class="text_img">
             <div>
                 <div class="reality_flex">
-                    <div class="num_deco"><img src="images/one.svg" alt="image showing the number one"></div>
+                    <div class="num_deco"><svg width="165" height="165" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_1_47)">
+                        <ellipse cx="82.1191" cy="50.4353" rx="41.1184" ry="41.0821" fill="white"/>
+                        </g>
+                        <path d="M86.5193 62.7159H81.4953V49.2119H76.5353V45.8519C78.05 45.8306 79.3193 45.4466 80.3433 44.6999C81.3886 43.9532 82.0073 43.0359 82.1993 41.9479H86.5193V62.7159Z" fill="#7BC0E3"/>
+                        <defs>
+                        <filter id="filter0_d_1_47" x="0.000732422" y="0.35321" width="164.237" height="164.164" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="32"/>
+                        <feGaussianBlur stdDeviation="20.5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_47"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_47" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg></div>
                     <div>
                         <h3 class="idea_h3">Your Idea</h3>
                         <p class="info">
@@ -245,7 +299,27 @@
                     </div>
                 </div>
                 <div class="reality_flex">
-                    <div class="num_deco">2</div>
+                    <div class="num_deco">
+                        <svg width="165" height="165" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_19)">
+                            <ellipse cx="82.1186" cy="50.5982" rx="41.1184" ry="41.0821" fill="white"/>
+                            </g>
+                            <path d="M79.3539 50.4308L74.6179 50.3988C74.4899 50.0575 74.4259 49.4815 74.4259 48.6708C74.4259 46.7081 75.1192 45.0441 76.5059 43.6788C77.9139 42.3134 79.8125 41.6308 82.2019 41.6308C84.5272 41.6308 86.3939 42.2921 87.8019 43.6148C89.2099 44.9161 89.9139 46.5268 89.9139 48.4468C89.9139 51.1348 88.5485 53.2895 85.8179 54.9108L81.8819 57.2468C81.1779 57.6948 80.7085 58.1641 80.4739 58.6548H90.0739V62.8788H74.2979C74.2979 60.8308 74.6605 59.0601 75.3859 57.5668C76.1325 56.0521 77.4019 54.7721 79.1939 53.7268L82.5859 51.7428C83.4179 51.2521 84.0045 50.7721 84.3459 50.3028C84.6872 49.8121 84.8579 49.2255 84.8579 48.5428C84.8579 47.8388 84.6125 47.2521 84.1219 46.7828C83.6525 46.3134 82.9699 46.0788 82.0739 46.0788C81.1352 46.0788 80.4099 46.3668 79.8979 46.9428C79.4072 47.5188 79.1619 48.2548 79.1619 49.1508C79.1619 49.5988 79.2259 50.0255 79.3539 50.4308Z" fill="#7BC0E3"/>
+                            <defs>
+                            <filter id="filter0_d_1_19" x="0.000244141" y="0.516113" width="164.237" height="164.164" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="32"/>
+                            <feGaussianBlur stdDeviation="20.5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_19"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_19" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                            
+                    </div>
                     <div>
                         <h3 class="idea_h3">Strategy meeting</h3>
                         <p class="info">
@@ -254,7 +328,26 @@
                     </div>
                 </div>
                 <div class="reality_flex">
-                    <div class="num_deco">3</div>
+                    <div class="num_deco">
+                        <svg width="165" height="165" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_15)">
+                            <ellipse cx="82.1184" cy="50.1083" rx="41.1184" ry="41.0821" fill="white"/>
+                            </g>
+                            <path d="M80.0561 53.3649L77.8801 50.0369L83.0001 45.8449H74.3281V41.6209H89.3041V45.5249L84.1841 49.4929C85.8267 49.5996 87.2027 50.2503 88.3121 51.4449C89.4427 52.6183 90.0081 54.0796 90.0081 55.8289C90.0081 57.7489 89.2614 59.4023 87.7681 60.7889C86.2961 62.1543 84.3227 62.8369 81.8481 62.8369C79.5227 62.8369 77.6134 62.1969 76.1201 60.9169C74.6267 59.6156 73.7947 58.0369 73.6241 56.1809L78.4881 55.2849C78.5307 56.2236 78.8507 57.0023 79.4481 57.6209C80.0667 58.2396 80.8561 58.5489 81.8161 58.5489C82.7547 58.5489 83.5014 58.2716 84.0561 57.7169C84.6321 57.1623 84.9201 56.4903 84.9201 55.7009C84.9201 54.7836 84.6214 54.0903 84.0241 53.6209C83.4267 53.1303 82.7227 52.8849 81.9121 52.8849C81.2721 52.8849 80.6534 53.0449 80.0561 53.3649Z" fill="#7BC0E3"/>
+                            <defs>
+                            <filter id="filter0_d_1_15" x="0" y="0.0262451" width="164.237" height="164.164" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="32"/>
+                            <feGaussianBlur stdDeviation="20.5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_15"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_15" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                    </div>
                     <div>
                         <h3 class="idea_h3">Agile and Scrum framework</h3>
                         <p class="info">
@@ -263,7 +356,26 @@
                     </div>
                 </div>
                 <div class="reality_flex">
-                    <div class="num_deco">4</div>
+                    <div class="num_deco">
+                        <svg width="165" height="165" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_23)">
+                            <ellipse cx="82.1186" cy="50.6185" rx="41.1184" ry="41.0821" fill="white"/>
+                            </g>
+                            <path d="M73.3763 58.5791V53.4591L82.0163 42.1311H88.0323V54.3551H91.3603V58.5791H88.0323V62.8991H82.9763V58.5791H73.3763ZM82.9763 54.3551V47.5071L77.7603 54.3551H82.9763Z" fill="#7BC0E3"/>
+                            <defs>
+                            <filter id="filter0_d_1_23" x="0.000244141" y="0.536438" width="164.237" height="164.164" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="32"/>
+                            <feGaussianBlur stdDeviation="20.5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_23"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_23" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
+                    </div>
                     <div>
                         <h3 class="idea_h3">Your website goes live</h3>
                         <p class="info">
@@ -283,9 +395,9 @@
     <section class="testimonial">
         <h3 class="test_h3">Testimonials</h3>
         <h4 class="test_h4">Our Happy Clients</h4>
-        <article class="review">
-            <img src="images/less.svg" alt="previous arrow" class="next">
-            <div class="rating">
+        <article class="review ">
+            <img src="images/less.svg" alt="previous arrow" class="next prev" onclick="plusSlides(-1)">
+            <div class="rating mySlides fade">
                 <h3>5.0</h3>
                 <div class="stars">
                     <img src="images/star.svg" alt="">
@@ -298,12 +410,71 @@
                     We tried several agencies before we found daCode. Has been a pleasure to work with and will soon start the next project with our second brand.
                 </p>
             </div>
-            <img src="images/greater.svg" alt="next arrow" class="next">
+            <div class="rating mySlides fade">
+                <h3>4.0</h3>
+                <div class="stars">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                </div>
+                <p class="experience">
+                    We tried several agencies before we found daCode. Has been a pleasure to work with and will soon start the next project with our second brand.
+                </p>
+            </div>
+            <div class="rating mySlides fade">
+                <h3>2.0</h3>
+                <div class="stars">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                </div>
+                <p class="experience">
+                    We tried several agencies before we found daCode. Has been a pleasure to work with and will soon start the next project with our second brand.
+                </p>
+            </div>
+            <div class="rating mySlides fade">
+                <h3>4.0</h3>
+                <div class="stars">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                </div>
+                <p class="experience">
+                    We tried several agencies before we found daCode. Has been a pleasure to work with and will soon start the next project with our second brand.
+                </p>
+            </div>
+            <div class="rating mySlides fade">
+                <h3>3.0</h3>
+                <div class="stars">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                </div>
+                <p class="experience">
+                    We tried several agencies before we found daCode. Has been a pleasure to work with and will soon start the next project with our second brand.
+                </p>
+            </div>
+            <img src="images/greater.svg" alt="next arrow" class="next go-next" onclick="plusSlides(1)">
         </article>
         <div class="carousel">
-            <img src="images/carousal_img.jpg" alt="">
-            <p class="carousel_para1">Paulus Haverinen</p>
-            <p class="carousel_para2">Owner, Ikirakenne Ltd</p>
+            <div class="dot" onclick="currentSlide(-1)">
+                <img src="images/carousal_img.jpg" alt="">
+            </div>
+            <div class="dot" onclick="currentSlide(0)">
+                <img src="images/carousal_img.jpg" alt="">
+            </div>
+            <div class="dot" onclick="currentSlide(1)">
+                <img src="images/carousal_img.jpg" alt="">
+                <p class="carousel_para1">Paulus Haverinen</p>
+                <p class="carousel_para2">Owner, Ikirakenne Ltd</p>
+            </div>
+            <div class="dot" onclick="currentSlide(2)">
+                <img src="images/carousal_img.jpg" alt="">
+            </div>
+            <div class="dot" onclick="currentSlide(3)">
+                <img src="images/carousal_img.jpg" alt="">
+            </div>
         </div>
         <div class="mobile_next"><img src="images/less.svg" alt="previous arrow" class="mobile_img">
             <img src="images/greater.svg" alt="next arrow" class="mobile_img"></div>
@@ -325,6 +496,13 @@
                 </p>
                 <p class="cauro_para2">Read More</p>
             </div>
+            <div class="cauro_div">
+                <h5 class="cauro_h5">Why Your SaaS Business should use WordPress</h5>
+                <p class="cauro_para1">
+                    A content management system like WordPress can help you build a highly engaging website for your SaaS business, with little to no effort
+                </p>
+                <p class="cauro_para2">Read More</p>
+            </div>
             <div class="cauro_div hide_mobile">
                 <h5 class="cauro_h5">Why Your SaaS Business should use WordPress</h5>
                 <p class="cauro_para1">
@@ -332,88 +510,50 @@
                 </p>
                 <p class="cauro_para2">Read More</p>
             </div>
-            <img src="images/next_img.svg" alt="">
+            <img src="images/next_img.svg" alt="next icon" class="">
             
         </article>
         
     </section>
     </main>
     <footer>
-        <div class="mobile">
-            <div class="footer_flex">
-                <div class="logo_div">
-                    <ul class="foot_logo">
-                        <li class="logo1">Logo</li>
-                        <li class="logo_para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</li>
-                    </ul>
-                </div>
-                <div class="work">
-                    <ul class="work_ul">
-                        <li class="work_bold">Work</li>
-                        <li class="ul_list">Blog</li>
-                        <li class="ul_list">How We Work</li>
-                        <li class="ul_list">Testimonials</li>
-                    </ul>
-                    <ul>
-                        <li class="work_bold">Services</li>
-                        <li class="ul_list">Marketing Strategy</li>
-                        <li class="ul_list">Website Optimization</li>
-                        <li class="ul_list">Email Maerketing</li>
-                    </ul>
-                </div>
-                <div class="business">
-                    <ul>
-                        <li class="work_bold">Business Solution</li>
-                        <li class="ul_list">Partnership</li>
-                        <li class="ul_list">About Project</li>
-                        <li class="ul_list">Corporate</li>
-                    </ul>
-                    <select name="" id="" class="work_bold select_bg">
-                        <option value="">Language</option>
-                    </select>       
-                </div>
-            </div>
-            <ul class="last_ul">
-                <li class="copy">&copy;DaCode. 2020</li>
-                <li>FB</li>
-                <li>TW</li>
-                <li>IG</li>
-            </ul>
-        </div>
         <div class="desktop">
             <div class="desktop_flex">
                 <ul class="foot_logo foot_margin">
-                    <li class="logo1">Logo</li>
-                    <li class="logo_para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</li>
+                    <li class="logo1"><a href="#">Logo</a></li>
+                    <li class="logo_para"><a href="#">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</a></li>
                 </ul>
                 <ul class="work_ul foot_margin">
-                    <li class="work_bold">Work</li>
-                    <li class="ul_list">Blog</li>
-                    <li class="ul_list">How We Work</li>
-                    <li class="ul_list">Testimonials</li>
+                    <li class="work_bold"><a href="#">Work</a></li>
+                    <li class="ul_list"><a href="#">Blog</a></li>
+                    <li class="ul_list"><a href="#">How We Work</a></li>
+                    <li class="ul_list"><a href="#">Testimonials</a></li>
                 </ul>
                 <ul class="foot_margin">
-                    <li class="work_bold">Services</li>
-                    <li class="ul_list">Marketing Strategy</li>
-                    <li class="ul_list">Website Optimization</li>
-                    <li class="ul_list">Email Marketing</li>
+                    <li class="work_bold"><a href="services.html"></a></li>
+                    <li class="ul_list"><a href="#">Marketing Strategy</a></li>
+                    <li class="ul_list"><a href="#">Website Optimization</a></li>
+                    <li class="ul_list"><a href="#">Email Marketing</a></li>
                 </ul>
                 <ul class="foot_margin">
-                    <li class="work_bold">Business Solution</li>
-                    <li class="ul_list">Partnership</li>
-                    <li class="ul_list">About Project</li>
-                    <li class="ul_list">Corporate</li>
+                    <li class="work_bold"><a href="#">Business Solution</a></li>
+                    <li class="ul_list"><a href="#">Partnership</a></li>
+                    <li class="ul_list"><a href="#">About Project</a></li>
+                    <li class="ul_list"><a href="#">Corporate</a></li>
                 </ul>
                 <select name="" id="" class="work_bold select_bg foot_margin">
                     <option value="">Language</option>
+                    <option value="">English</option>
+                    <option value="">French</option>
+                    <option value="">Spanish</option>
                 </select>
             </div>
             <hr class="foot_hr">
             <ul class="last_ul">
                 <li class="copy">&copy;DaCode. 2020</li>
-                <li>FB</li>
-                <li>TW</li>
-                <li>IG</li>
+                <li><a href="#">FB</a></li>
+                <li><a href="#">TW</a></li>
+                <li><a href="#">IG</a></li>
             </ul>
         </div>
     </footer>
